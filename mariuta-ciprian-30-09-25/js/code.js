@@ -48,6 +48,6 @@ function registra_bottone(array_nomi_e_password){
 
 function init_registrazione(){
     var array_nomi_e_password= [];
-    return array_nomi_e_password
+    return array_nomi_e_password;
     
 }
