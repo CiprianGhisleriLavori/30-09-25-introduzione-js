@@ -10,8 +10,6 @@ function sorpresa_faruk(){
 document.getElementById('faruk').innerText =faruk;
 }
 
-var array_nomi_e_password=[];
-
 //fine prima parte
 function accedi_bottone(array_nomi_e_password){
     if(document.getElementById('nome').value === ""){
@@ -45,5 +43,11 @@ function registra_bottone(array_nomi_e_password){
        console.log(array_nomi_e_password);
        return array_nomi_e_password;
    }
+    
+}
+
+function init_registrazione(){
+    var array_nomi_e_password= [];
+    return array_nomi_e_password
     
 }
