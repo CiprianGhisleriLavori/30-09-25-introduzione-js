@@ -24,7 +24,7 @@ function accedi_bottone(array_nomi_e_password){
        for (i=0 ;i<array_nomi_e_password.lenght; i++ ){
            var nome = document.getElementById('nome').value;
            var password = document.getElementById('password').value;
-           if (nome === array_nomi_e_password[i] and password === array_nomi_e_password[i+1]){
+           if (nome === array_nomi_e_password[i]  &&  password === array_nomi_e_password[i+1]){
                alert("Accesso eseguito");
            }
        }
@@ -38,8 +38,8 @@ function registra_bottone(array_nomi_e_password){
         document.getElementById("nome").classList.add('border-red');
     }
     else{
-        const nome = document.getElementById('nome').value;
-        const password = document.getElementById('password').value;
+        var nome = document.getElementById('nome').value;
+        var password = document.getElementById('password').value;
         array_nomi_e_password.push(nome,password);
        document.getElementById('nome').classList.add('border-green');
        console.log(array_nomi_e_password);
